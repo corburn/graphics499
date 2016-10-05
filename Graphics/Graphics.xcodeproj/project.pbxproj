@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F62BC5391DA37C0700131E2A /* Image.c in Sources */ = {isa = PBXBuildFile; fileRef = F62BC5371DA37C0700131E2A /* Image.c */; };
 		F62DEF6F1DA1FFBB0012930F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F62DEF6E1DA1FFBB0012930F /* main.c */; };
+		F62DEF771DA200350012930F /* downSampling.c in Sources */ = {isa = PBXBuildFile; fileRef = F62DEF751DA200350012930F /* downSampling.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F62BC5371DA37C0700131E2A /* Image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Image.c; sourceTree = "<group>"; };
+		F62BC5381DA37C0700131E2A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		F62DEF6B1DA1FFBB0012930F /* Graphics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Graphics; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62DEF6E1DA1FFBB0012930F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		F62DEF751DA200350012930F /* downSampling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = downSampling.c; sourceTree = "<group>"; };
+		F62DEF761DA200350012930F /* downSampling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downSampling.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				F62DEF6E1DA1FFBB0012930F /* main.c */,
+				F62BC5371DA37C0700131E2A /* Image.c */,
+				F62BC5381DA37C0700131E2A /* Image.h */,
+				F62DEF761DA200350012930F /* downSampling.h */,
+				F62DEF751DA200350012930F /* downSampling.c */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62BC5391DA37C0700131E2A /* Image.c in Sources */,
+				F62DEF771DA200350012930F /* downSampling.c in Sources */,
 				F62DEF6F1DA1FFBB0012930F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +258,7 @@
 				F62DEF741DA1FFBB0012930F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
