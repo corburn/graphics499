@@ -27,9 +27,10 @@ int main(int argc, const char * argv[]) {
     Image *image;
     
     /************************************************************************************************/
-    image = ImageRead(inputNmae);
-    
+    //image = ImageRead(inputNmae);
+    image = threadSampling(inputNmae);
     ImageWrite(image, outputName, format);
+    //DownSampling(image, outputName, format);
     
     return 0;
 }

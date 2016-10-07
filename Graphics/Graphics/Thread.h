@@ -1,13 +1,13 @@
 //
-//  Image.h
+//  Thread.h
 //  Graphics
 //
-//  Created by jr2339 on 10/3/16.
+//  Created by jr2339 on 10/6/16.
 //  Copyright © 2016 jr2339. All rights reserved.
 //
 
-#ifndef Image_h
-#define Image_h
+#ifndef Thread_h
+#define Thread_h
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -27,10 +27,9 @@ typedef struct Image{
 }Image;
 int readMagicNumber(FILE *fp);
 Image *readHeader(FILE *f_source, Image *buffer);
-Image *ImageRead(const char *filename);
-void DownSampling(Image *buffer, const char *filename,int format);
+//Image *ImageRead(const char *filename);
+//void DownSampling(Image *buffer, const char *filename,int format);
 void ImageWrite(Image *buffer, const char *filename,int format);
 void *thread_Read(Image *buffer,FILE *fp,int counter);
 Image* threadSampling(const char *filename);
-
-#endif /* Image_h */
+#endif /* Thread_h */
